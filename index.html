@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Monitoring Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+    <h1>Room Monitoring Dashboard</h1>
+    <button id="theme-toggle">Dark Mode</button>
+</header>
+<body>
+    <div class="room" id="room1">
+        <h2>Room 1</h2>
+        <h3>Temperature</h3>
+        <canvas id="temperatureGaugeRoom1"></canvas>
+        <div id="preview-textfield" style="font-size: 20px;">XX.X</div>
+        <h3>Humidity</h3>
+        <canvas id="humidityGaugeRoom1"></canvas>
+        <div id="preview-textfield" style="font-size: 20px;">Humidity</div>
+    </div>
+    <div class="room" id="room2">
+        <h2>Room 2</h2>
+        <h3>Temperature</h3>
+        <canvas id="temperatureGaugeRoom2"></canvas>
+        <div id="preview-textfield" style="font-size: 20px;">XX.X</div>
+        <h3>Humidity</h3>
+        <canvas id="humidityGaugeRoom2"></canvas>
+        
+        <div id="preview-textfield" style="font-size: 20px;">XX.X</div>
+    </div>
+    <div class="room" id="room3">
+        <h2>Room 3</h2>
+        <h3>Temperature</h3>
+        <canvas id="temperatureGaugeRoom3"></canvas>
+        <div id="preview-textfield" style="font-size: 20px;">XX.X</div>
+        <h3>Humidity</h3>
+        <canvas id="humidityGaugeRoom3"></canvas>
+        <div id="preview-textfield" style="font-size: 20px;">XX.X</div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.1.0/mqttws31.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gaugeJS/dist/gauge.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
